@@ -1,0 +1,39 @@
+body
+{
+	font-family:arial;
+	
+}
+body
+{
+	font-size:14px;
+	
+}
+
+.search {
+	padding:5px;
+	font-size:14px;
+}
+
+
+.champ
+{
+	padding-bottom:10px;
+}
+
+.champ .name
+{
+	
+}
+
+.champ .hash
+{
+	color:#666;
+}
+
+
+
+.name-show
+, .hash-show
+{
+	display:block !important;
+}
