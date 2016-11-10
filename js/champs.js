@@ -82,7 +82,13 @@ var champions = {
 			{name: "Quake", champClass: "Science", hash: "#Offensive: Raw Damage #Hero #Inhuman #S.H.I.E.L.D"},
 			{name: "Hulk", champClass: "Science", hash: "#Defensive: Tank #Hero #Illuminati #Avengers"},
 			{name: "Falcon", champClass: "Skill", hash: "#Control: Counter #Hero #Metal #Civil War - Cpt. America"},
-			{name: "Rogue", champClass: "Mutant", hash: "#Control: Counter #Hero #X-Men #A-Force"}
+			{name: "Rogue", champClass: "Mutant", hash: "#Control: Counter #Hero #X-Men #A-Force"},
+			{name: "Ultron (Classic)", champClass: "Tech", hash: "#Defensive: Utility #Villain #Metal #Robot"},
+			{name: "Thanos", champClass: "Cosmic", hash: "#Defensive: Tank #Villain #Villain of the Contest"},
+			{name: "Black Panther", champClass: "Skill", hash: "#Offensive: Damage Over Time #Hero #Illuminati #Avengers"},
+			{name: "Iron Fist (Immortal)", champClass: "Mystic", hash: "#Offensive: Burst #Hero #New Avengers"},
+			{name: "Deadpool", champClass: "Mutant", hash: "#Defensive: Utility #Mercenary #X-Men"},
+			{name: "Kang", champClass: "Tech", hash: "#Defensive: Guard #Villain #Metal #Villain of the Contest #Chronos Corps"}
 		];
 
 		me.DisplayData(me.champs);
