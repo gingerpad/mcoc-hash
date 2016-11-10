@@ -32,7 +32,7 @@ var champions = {
 			{name: "Spider-Gwen", champClass: "Science", hash: "#Defensive: Utility #Hero"},
 			{name: "Spider-Man (Miles Morales)", champClass: "Science", hash: "#Control: Denial #Hero #New Avengers #Champions"},
 			{name: "Magneto", champClass: "Mutant", hash: "#Offensive: Damage Over Time #Villain #Illuminati #X-Force"},
-			{name: "Juggernaut", champClass: "Mystic", hash: "#Defensive: Tank #Vilain #Thunderbolts"},
+			{name: "Juggernaut", champClass: "Mystic", hash: "#Defensive: Tank #Villain #Thunderbolts"},
 			{name: "Venompool", champClass: "Cosmic", hash: "#Control: Counter #Villain #Symbiote"},
 			{name: "Star-Lord", champClass: "Tech", hash: "#Offensive: Damage Over Time #Hero #Guardians of the Galaxy"},
 			{name: "Punisher", champClass: "Skill", hash: "#Offensive: Damage Over Time #Hero #Defenders"},
