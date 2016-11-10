@@ -116,11 +116,15 @@ var champions = {
 		var me = this;
 		
 		var ch = data.sort(function(a,b) {
-			return a.name - b.name;
+			if ( a.name < b.name )
+				return -1;
+			if ( a.name > b.name )
+				return 1;
+			return 0;
 		});
 		
-		for (var i = 0; i < data.length; i++) {
-			var d = data[i];
+		for (var i = 0; i < ch.length; i++) {
+			var d = ch[i];
 			
 			var container = $('<div class="champ" data-name="' + d.name.toLowerCase() + '" data-hash="' + d.hash.toLowerCase() + '"></div>');
 			
