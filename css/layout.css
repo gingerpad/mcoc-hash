@@ -6,7 +6,7 @@ body
 body
 {
 	font-size:14px;
-	
+	background-color:#333;
 }
 
 .search {
@@ -33,27 +33,48 @@ body
 	width:100%;
 	padding:10px;
 	margin-bottom:5px;
-	border:1px solid #666;
+	overflow:hidden;
+	border:1px solid #fff;
 	
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box; 
 }
 
+.champ .left
+{
+	float:left;
+	width:80%;
+}
+
+.champ .right
+{
+	float:left;
+	width:20%;
+	text-align:right;
+}
+
+.champ .right img
+{
+	max-height:30px;
+	max-width:30px;
+}
+
 .champ .name
 {
-	
+	color:#fff;
 }
 
 .champ .hash
 {
-	color:#666;
+	color:#999;
 }
 
 
 
 .name-show
 , .hash-show
+, .class-show
 {
 	display:block !important;
 }
