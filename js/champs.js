@@ -95,7 +95,7 @@ var champions = {
 			
 			var criteria = $(this).val();
 			
-			if(criteria.length > 3) {
+			if(criteria.length >= 3) {
 				me.RunSearch(criteria);
 			} else {
 				$('.champ').show().removeClass('name-show').removeClass('hash-show');
