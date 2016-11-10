@@ -106,7 +106,7 @@ var champions = {
 			if(criteria.length >= 3) {
 				me.RunSearch(criteria);
 			} else {
-				$('.champ').show().removeClass('name-show').removeClass('hash-show').removeClass('class-show');
+				$('.champ').show().removeClass('name-show').removeClass('hash-show').removeClass('hashclean-show').removeClass('class-show');
 			}
 		});
 	}
@@ -114,10 +114,11 @@ var champions = {
 	, RunSearch: function(q) {
 		var me = this;
 		
-		$('.champ').hide().removeClass('name-show').removeClass('hash-show').removeClass('class-show');
+		$('.champ').hide().removeClass('name-show').removeClass('hash-show').removeClass('hashclean-show').removeClass('class-show');
 		
 		$( '.champ[data-name*="' + q.toLowerCase() + '"]' ).addClass('name-show');
 		$( '.champ[data-hash*="' + q.toLowerCase() + '"]' ).addClass('hash-show');
+		$( '.champ[data-hashclean*="' + q.toLowerCase() + '"]' ).addClass('hashclean-show');
 		$( '.champ[data-class*="' + q.toLowerCase() + '"]' ).addClass('class-show');
 	}
 	
@@ -135,7 +136,7 @@ var champions = {
 		for (var i = 0; i < ch.length; i++) {
 			var d = ch[i];
 			
-			var container = $('<div class="champ" data-name="' + d.name.toLowerCase() + '" data-hash="' + d.hash.toLowerCase() + '" data-class="' + d.champClass.toLowerCase() + '"></div>');
+			var container = $('<div class="champ" data-name="' + d.name.toLowerCase() + '" data-hash="' + d.hash.toLowerCase() + '" data-hashclean="' + d.hash.replace(/#/gi, "").replace(/:/gi, "").toLowerCase() + '" data-class="' + d.champClass.toLowerCase() + '"></div>');
 			
 			var left = $('<div class="left"></div>');
 			var right = $('<div class="right"><img class="class-icon" src="images/icons/' + d.champClass.toLowerCase() + '.png"/></div>');
