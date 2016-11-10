@@ -80,7 +80,9 @@ var champions = {
 			{name: "Moon Knight", champClass: "Skill", hash: "#Offensive: Raw Damage #Mercenary #Defenders"},
 			{name: "Vision", champClass: "Tech", hash: "#Control: Denial #Hero #Robot #Avengers"},
 			{name: "Quake", champClass: "Science", hash: "#Offensive: Raw Damage #Hero #Inhuman #S.H.I.E.L.D"},
-			{name: "Hulk", champClass: "Science", hash: "#Defensive: Tank #Hero #Illuminati #Avengers"}
+			{name: "Hulk", champClass: "Science", hash: "#Defensive: Tank #Hero #Illuminati #Avengers"},
+			{name: "Falcon", champClass: "Skill", hash: "#Control: Counter #Hero #Metal #Civil War - Cpt. America"},
+			{name: "Rogue", champClass: "Mutant", hash: "#Control: Counter #Hero #X-Men #A-Force"}
 		];
 
 		me.DisplayData(me.champs);
