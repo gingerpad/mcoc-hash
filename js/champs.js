@@ -116,10 +116,10 @@ var champions = {
 		
 		$('.champ').hide().removeClass('name-show').removeClass('hash-show').removeClass('hashclean-show').removeClass('class-show');
 		
-		$( '.champ[data-name*="' + q.toLowerCase() + '"]' ).addClass('name-show');
-		$( '.champ[data-hash*="' + q.toLowerCase() + '"]' ).addClass('hash-show');
-		$( '.champ[data-hashclean*="' + q.toLowerCase() + '"]' ).addClass('hashclean-show');
-		$( '.champ[data-class*="' + q.toLowerCase() + '"]' ).addClass('class-show');
+		$( '.champ[data-name*="' + q.replace(/#/gi, "").replace(/:/gi, "").toLowerCase() + '"]' ).addClass('name-show');
+		$( '.champ[data-hash*="' + q.replace(/#/gi, "").replace(/:/gi, "").toLowerCase() + '"]' ).addClass('hash-show');
+		$( '.champ[data-hashclean*="' + q.replace(/#/gi, "").replace(/:/gi, "").toLowerCase() + '"]' ).addClass('hashclean-show');
+		$( '.champ[data-class*="' + q.replace(/#/gi, "").replace(/:/gi, "").toLowerCase() + '"]' ).addClass('class-show');
 	}
 	
 	, DisplayData: function(data) {
